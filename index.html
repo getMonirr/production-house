@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production House</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind config -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                "p-yellow": '#FECC02',
+                "black-1": "#131313",
+                "black-2": "#4E4E4E"
+              },
+              fontFamily : {
+                "bebas": ['Bebas Neue', "cursive"],
+                "mon": ['Montserrat', "sans-serif"],
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="bg-white fixed top-0 left-0 right-0">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between h-24 items-center">
+                <h1 class="font-bebas font-normal text-3xl text-balck-1">Production House</h1>
+            <ul class="flex font-normal text-2xl text-balck-1 font-bebas gap-5">
+                <a href="#">About Us</a> 
+                <a href="#">Our Movies</a> 
+                <a href="#">Services</a> 
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header -->
+    <header class="h-screen bg-[url('./assets/images/banner.jpg')] bg-center bg-cover">
+        <div class="container mx-auto px-4 flex items-center h-full text-white">
+            <div class="">
+                <h2 class="font-bebas font-normal text-xl">Movie production studio</h2>
+            <h1 class="font-normal text-7xl text-white font-bebas">Films MAde to <br> <span class="text-p-yellow">Perfection</span></h1>
+            <p class="font-normal text-base w-1/2 mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut  elit tellus, 
+                luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <button class="text-bebas font-normal text-xl py-3 px-6 border-2 border-white hover:bg-p-yellow hover:text-black-1 hover:border-p-yellow font-bebas">Discover More</button>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
